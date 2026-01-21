@@ -1,94 +1,90 @@
-import React from "react";
+import FloatingBackground from "./FloatingBackground";
+import FloatingBackground2 from "./FloatingBackground2";
+import HeroSection from "./HeroSection";
+import Profile from "./Profile";
+import TechnicalSkills from "./TechnicalSkills";
+import FigmaShowcase from "./FigmaShowcase";
+import Experience from "./Experience";
+import AthleteShowcase from "./AthleteShowcase";
+import ArtisticShowcase from "./ArtisticShowcase";
+import TrustMeReal from "./TrustMeReal";
+import MusicPlay from "./MusicPlay";
+
+import QR from "./assets/QR.png"; 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
-      <header className="bg-white shadow-md py-6">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-3xl font-bold">Laurize Jeante Wangkay</h1>
-          <p className="text-gray-600 mt-1">Aspiring Software Developer | Student Athlete</p>
+    <div className="relative min-h-screen font-sans text-gray-900 overflow-x-hidden">
+      <FloatingBackground />
+      <FloatingBackground2 />
+      <HeroSection />
+
+      {/* MAIN CONTENT WRAPPER */}
+      <main className="max-w-6xl mx-auto px-6 pb-20 -mt-16 relative z-10">
+        <Profile />
+        <div className="w-full mt-12">
+           <TechnicalSkills />
         </div>
-      </header>
-
-      <main className="max-w-4xl mx-auto px-4 py-8 space-y-12">
-
-        {/* Profile Section */}
-        <section id="profile">
-          <h2 className="text-2xl font-semibold mb-4">Profile</h2>
-          <p>
-            A persevering and dedicated student software programmer with a passion for continuous learning.
-            Adept at problem-solving, an idealist in innovation, and eager to apply programming skills to real-world challenges.
-            As a student athlete, I bring determination, discipline, and flexibility with my time.
-          </p>
-          <div className="mt-4">
-            <h3 className="font-semibold">Hobbies & Interests:</h3>
-            <p>Coding challenges, basketball, music, and community volunteering.</p>
-          </div>
-          <div className="mt-2">
-            <h3 className="font-semibold">Values & Ethics:</h3>
-            <p>Integrity, perseverance, teamwork, and a commitment to continuous improvement.</p>
-          </div>
-        </section>
-
-        {/* Technical Skills */}
-        <section id="skills">
-          <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
-          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 list-disc list-inside">
-            <li>Python</li>
-            <li>JavaScript (React, Node.js)</li>
-            <li>SQL & Databases</li>
-            <li>Machine Learning</li>
-            <li>Data Analysis & Visualization</li>
-            <li>Git & GitHub</li>
-          </ul>
-        </section>
-
-        {/* Professional Strengths */}
-        <section id="strengths">
-          <h2 className="text-2xl font-semibold mb-4">Professional Strengths</h2>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Problem-solving and critical thinking</li>
-            <li>Adaptable to dynamic environments</li>
-            <li>Strong communication and teamwork skills</li>
-            <li>Creative and innovative mindset</li>
-            <li>Time management and multitasking</li>
-          </ul>
-        </section>
-
-        {/* Experience */}
-        <section id="experience">
-          <h2 className="text-2xl font-semibold mb-4">Experience & Portfolio</h2>
-          <p className="mb-2">Explore my projects and contributions:</p>
-          <ul className="space-y-2">
-            <li>
-              <a
-                href="https://github.com/YOUR_GITHUB"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                GitHub Portfolio
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.figma.com/YOUR_FIGMA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Figma Design Portfolio
-              </a>
-            </li>
-          </ul>
-        </section>
+        <FigmaShowcase />
+        <Experience />
+        <ArtisticShowcase />
+        <AthleteShowcase />
+        <TrustMeReal />
       </main>
 
-      <footer className="bg-white shadow-inner py-4 mt-12">
-        <div className="max-w-4xl mx-auto text-center text-gray-500 text-sm">
-          © 2026 Laurize Jeante Wangkay. All rights reserved.
+      {/* FOOTER (Cleaned up to work with the floating QR) */}
+      <footer className="py-12 mt-20 border-t border-stone-200/50 bg-white/30 backdrop-blur-md relative z-20">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          
+          <div className="text-center md:text-left">
+             <p className="text-stone-400 text-sm font-medium">
+              © 2026 Laurize Jeante Wangkay. All rights reserved.
+            </p>
+          </div>
+
+          <div className="text-center md:text-right">
+            <div className="flex items-center justify-center md:justify-end gap-2 mb-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <p className="text-[10px] font-black text-green-700 uppercase tracking-[0.2em]">
+                Available for Internship 2026
+              </p>
+            </div>
+            <p className="text-[10px] text-stone-300 uppercase tracking-widest">
+              Designed & Built with React + Tailwind v4
+            </p>
+          </div>
         </div>
       </footer>
+
+      <div className="hidden lg:flex fixed bottom-8 left-8 z-50 items-center gap-4 group">
+        
+        {/*QR*/}
+        <div className="bg-white/80 backdrop-blur-xl p-2.5 rounded-2xl shadow-2xl border border-white/50 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3 group-hover:bg-white">
+          <img 
+            src={QR} 
+            alt="Scan to Connect" 
+            className="w-20 h-20 md:w-24 md:h-24 object-contain"
+          />
+        </div>
+
+        <MusicPlay />
+
+        {/* The "Slide-out" Label */}
+        <div className="opacity-0 -translate-x-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
+          <div className="bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/10">
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-green-400 mb-1">
+              Connect Digitally
+            </p>
+            <p className="text-xs font-bold leading-tight">
+              Scan to view <br /> social links
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }
