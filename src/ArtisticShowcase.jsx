@@ -1,8 +1,8 @@
 import React from "react";
 
-import Drawing from "./assets/art/Drawing.png"; 
-import Animation from "./assets/art/Animation.mp4"; 
-import Pubmat from "./assets/art/Pubmat.png"; 
+import Drawing from "./assets/Art/Drawing.png"; 
+import Animation from "./assets/Art/Animation.mp4"; 
+import Pubmat from "./assets/Art/Pubmat.png"; 
 
 const GalleryItem = ({ title, type, content, medium, link }) => (
   <div className="flex-shrink-0 w-[85vw] md:w-[600px] snap-center">
