@@ -16,7 +16,7 @@ import SQL from "./assets/logos/SQL.jpg";
 import MYSQL from "./assets/logos/MYSQL.jpg"; 
 import Tailwind from "./assets/logos/Tailwind.jpg"; 
 import VS2022 from "./assets/logos/VS2022.jpg"; 
-import VSCODE from "./assets/logos/VSCODE.jpg"; 
+import VSCode from "./assets/logos/VSCode.jpg"; 
 import Azure from "./assets/logos/Azure.jpg"; 
 
 
@@ -62,7 +62,7 @@ const TechnicalSkills = () => {
         { name: "GitHub", icon: Github },
         { name: "Altair RapidMiner", icon: Altair },
         { name: "Figma", icon: Figma },
-        { name: "VS Code", icon: VSCODE },
+        { name: "VS Code", icon: VSCode },
         { name: "VS 2022", icon: VS2022 },
         { name: "Azure", icon: Azure },
         { name: "MYSQL", icon: MYSQL },
