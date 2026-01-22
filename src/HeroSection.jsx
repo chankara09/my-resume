@@ -10,7 +10,7 @@ const HeroSection = () => {
           Laurize Jeante G. Wangkay
         </h1>
         <p className="text-xl md:text-2xl text-lime-900 font-semibold tracking-wide uppercase mb-12">
-          Aspiring Software Developer <span className="text-lime-900 mx-2">|</span> University Athlete
+          Aspiring Web Developer <span className="text-lime-900 mx-2">|</span> University Athlete
         </p>
 
         {/* --- LUCIDE ICONS SECTION (Red 700) --- */}

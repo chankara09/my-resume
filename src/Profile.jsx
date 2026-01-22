@@ -28,7 +28,7 @@ const ProfileSection = () => {
           <div className="pt-8 text-center">
             <div className="relative h-10 mb-2 flex items-center justify-center">
               <p className="absolute inset-x-0 text-center transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-3 text-xl md:text-2xl text-green-800 font-bold tracking-tight">
-                Aspiring Software Developer
+                Aspiring Web Developer
               </p>
               <p className="absolute inset-x-0 text-center transition-all duration-500 opacity-0 translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 text-xl md:text-2xl text-red-700 font-bold tracking-tight">
                 University Athlete
@@ -43,7 +43,7 @@ const ProfileSection = () => {
         <section className="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-xl border border-white/20 h-full">
           <h2 className="text-3xl font-bold mb-4 text-green-800">Profile 🍅</h2>
           <p className="leading-relaxed text-stone-900 text-justify text-lg">
-            A persevering and dedicated computer science student and varsity athlete with a strong drive for continuous learning and excellence. Demonstrates discipline, resilience, and reliability through balancing national-level athletic training with academic, project, and internship commitments. Adept at problem-solving, time-blocking, and meeting deadlines under pressure.
+            A persevering and dedicated computer science student and university athlete with a strong drive for continuous learning and excellence. Demonstrates discipline, resilience, and reliability through balancing national-level athletic training with academic, project, and internship commitments. Particularly interested in UI/UX design, front-end development, and data-driven systems, with a focus on building accessible, user-centered interfaces and working with structured datasets and databases, while also having hands-on experience with back-end development and API integration.
           </p>
           
           <div className="flex flex-col gap-8 mt-8">
