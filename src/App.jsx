@@ -79,7 +79,7 @@ function App() {
               Connect Digitally
             </p>
             <p className="text-xs font-bold leading-tight">
-              Scan to view <br /> social links
+              Scan to view <br /> my resume!
             </p>
           </div>
         </div>
