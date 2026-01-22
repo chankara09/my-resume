@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Email */}
           <a 
-            href="laurize_wangkay@dlsu.edu.ph" 
+            href="mailto:laurize_wangkay@dlsu.edu.ph" 
             className="transition-all duration-300 hover:scale-125 hover:rotate-6 hover:text-red-800 filter drop-shadow-sm hover:drop-shadow-lg"
             title="Email Me"
           >
