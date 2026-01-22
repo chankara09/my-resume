@@ -69,14 +69,14 @@ const ArtShowcase = () => {
       type: "video", 
       content: Animation, 
       medium: "2D Animation",
-      link: "https://drive.google.com/drive/folders/1ZkUZZSU0r2YhoXIcWK3ZrJxXZKDL0rPe?usp=drive_link" 
+      link: "https://drive.google.com/drive/folders/1ZkUZZSU0r2YhoXIcWK3ZrJxXZKDL0rPe?usp=sharing" 
     },
     { 
       title: "Facebook PubMat", 
       type: "image", 
       content: Pubmat, 
       medium: "Publication Material",
-      link: "https://drive.google.com/drive/folders/1wcH4CmTiMlD9YvrFLjw6h95e31R1t0f8?usp=sharing/" 
+      link: "https://drive.google.com/drive/folders/1wcH4CmTiMlD9YvrFLjw6h95e31R1t0f8?usp=sharing" 
     },
   ];
 

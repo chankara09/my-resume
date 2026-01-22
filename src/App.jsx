@@ -37,7 +37,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           
           <div className="text-center md:text-left">
-             <p className="text-stone-400 text-sm font-medium">
+             <p className="text-black text-sm font-medium">
               © 2026 Laurize Jeante Wangkay. All rights reserved.
             </p>
           </div>
@@ -52,7 +52,7 @@ function App() {
                 Available for Internship 2026
               </p>
             </div>
-            <p className="text-[10px] text-stone-300 uppercase tracking-widest">
+            <p className="text-[10px] text-black uppercase tracking-widest">
               Designed & Built with React + Tailwind v4
             </p>
           </div>
