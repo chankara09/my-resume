@@ -19,7 +19,7 @@ function App() {
       <FloatingBackground2 />
       <HeroSection />
 
-      {/* MAIN CONTENT WRAPPER */}
+      {/*MAIN CONTENT WRAPPER*/}
       <main className="max-w-6xl mx-auto px-6 pb-20 -mt-16 relative z-10">
         <Profile />
         <div className="w-full mt-12">
@@ -32,7 +32,7 @@ function App() {
         <TrustMeReal />
       </main>
 
-      {/* FOOTER (Cleaned up to work with the floating QR) */}
+      {/* FOOTER*/}
       <footer className="py-12 mt-20 border-t border-stone-200/50 bg-white/30 backdrop-blur-md relative z-20">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           
@@ -59,32 +59,31 @@ function App() {
         </div>
       </footer>
 
-      <div className="hidden lg:flex fixed bottom-8 left-8 z-50 items-center gap-4 group">
-        
-        {/*QR*/}
-        <div className="bg-white/80 backdrop-blur-xl p-2.5 rounded-2xl shadow-2xl border border-white/50 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3 group-hover:bg-white">
-          <img 
-            src={QR} 
-            alt="Scan to Connect" 
-            className="w-20 h-20 md:w-24 md:h-24 object-contain"
-          />
-        </div>
-
-        <MusicPlay />
-
-        {/* The "Slide-out" Label */}
-        <div className="opacity-0 -translate-x-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
-          <div className="bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/10">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-green-400 mb-1">
-              Connect Digitally
-            </p>
-            <p className="text-xs font-bold leading-tight">
-              Scan to view <br /> my resume!
-            </p>
-          </div>
-        </div>
-
+      <div className="flex fixed bottom-4 left-4 z-50 items-center gap-4 group">
+  
+      <div className="hidden lg:block bg-white/80 backdrop-blur-xl p-2.5 rounded-2xl shadow-2xl border border-white/50 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3 group-hover:bg-white">
+        <img 
+          src={QR} 
+          alt="Scan to Connect" 
+          className="w-20 h-20 md:w-24 md:h-24 object-contain"
+        />
       </div>
+
+      <MusicPlay />
+
+      <div className="hidden lg:block opacity-0 -translate-x-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
+        <div className="bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/10">
+          <p className="text-[10px] font-black uppercase tracking-[0.2em] text-green-400 mb-1">
+            Connect Digitally
+          </p>
+          <p className="text-xs font-bold leading-tight">
+            Scan to view <br /> my resume!
+          </p>
+        </div>
+      </div>
+
+    </div>
+
     </div>
   );
 }
