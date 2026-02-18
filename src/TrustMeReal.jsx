@@ -1,6 +1,8 @@
 import React from "react";
 import Cert1 from "./assets/AWS.png"; 
-import Cert2 from "./assets/WLT.png"; 
+import Cert2 from "./assets/WLT.png";
+import Cert3 from "./assets/Simplilearn.png"; 
+
 
 const CertificationCard = ({ title, issuer, date, image }) => (
   <div className="group relative bg-white/70 backdrop-blur-md p-6 rounded-3xl border border-white/50 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
@@ -78,6 +80,12 @@ const TrustSection = () => {
             issuer="Amazon Web Services Academy | Credly" 
             date="2025" 
             image={Cert1} 
+          />
+          <CertificationCard 
+            title="Simplilearn Certified PowerBI for Beginners" 
+            issuer="Simplilearn & Microsoft | Simplilearn" 
+            date="2026" 
+            image={Cert3} 
           />
         </div>
       </div>
